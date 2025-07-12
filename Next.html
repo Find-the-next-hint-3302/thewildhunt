@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Within the Picture</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #eee;
+      font-family: 'Courier New', monospace;
+      max-width: 700px;
+      margin: 80px auto;
+      padding: 30px;
+      text-align: center;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #66ccff;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    .hint {
+      font-style: italic;
+      color: #999;
+      margin-top: 40px;
+      font-size: 16px;
+    }
+    img {
+      margin-top: 30px;
+      max-width: 100%;
+      border: 3px solid #66ccff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Within the Picture</h1>
+  <p>
+    A message lies hidden within this picture.<br />
+    Truly understand it to uncover what is concealed.<br />
+    Look closely, for not everything is as it seems.<br />
+    <strong>Click on the image below and find the secret.</strong>
+  </p>
+
+  <!-- Replace 'hidden-clue.png' with your actual image filename -->
+  <img src="edited_image.png" alt="Mysterious clue image" id="clueImage" />
+
+  <p class="hint">Tip: Sometimes the key is hidden in shadows, shapes, or subtle details.</p>
+
+  <script>
+    document.getElementById('clueImage').addEventListener('click', () => {
+      alert('Did you notice the faint numbers at the bottom right corner? Use them for your next code.');
+    });
+  

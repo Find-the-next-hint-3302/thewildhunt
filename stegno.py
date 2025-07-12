@@ -1,3 +1,12 @@
+
+from matplotlib.image import imread
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+from PIL import Image
+import numpy as np
+
+
+
 def steg_read(image_path, message_length, spacing=10):
     #open the image using PIL
     img = Image.open(image_path)
@@ -15,4 +24,4 @@ def steg_read(image_path, message_length, spacing=10):
     chars = [chr(value) for value in hidden_values]
 
     return ''.join(chars)
-steg_read(image_path='edited_image.png',message_length=5)
+print(steg_read(image_path='edited_image.png',message_length=48))
