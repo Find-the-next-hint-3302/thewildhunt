@@ -41,6 +41,15 @@
       transform: scale(1.05);
       filter: brightness(1.1);
     }
+    img::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
   </style>
 </head>
 <body>
@@ -48,17 +57,15 @@
   <p>
     A message lies hidden within this picture.<br />
     Truly understand it to uncover what is concealed.<br />
-    Look closely, for not everything is as it seems.<br />
-    <strong>Click on the image below and find the secret.</strong>
+    Look closely, for not everything is as it seems.
+    Everything it not what it seems 
+    <br />
   </p>
 
   <!-- Replace 'hidden-clue.png' with your actual image filename -->
-  <img src="edited_image.png" alt="Mysterious clue image" id="clueImage" />
+  <img src="edited_image copy.png" alt="Mysterious clue image" id="clueImage" />
 
   <p class="hint">Tip: Sometimes the key is hidden in shadows, shapes, or subtle details.</p>
 
   <script>
-    document.getElementById('clueImage').addEventListener('click', () => {
-      alert('Did you notice the faint numbers at the bottom right corner? Use them for your next code.');
-    });
-  
+    
