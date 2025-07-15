@@ -24,4 +24,5 @@ def steg_read(image_path, message_length, spacing=10):
     chars = [chr(value) for value in hidden_values]
 
     return ''.join(chars)
-print(steg_read(image_path='edited_image.png',message_length=48))
+
+print(steg_read(image_path='which one?',message_length=????))
